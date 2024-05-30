@@ -1,13 +1,24 @@
 ---
 
-name: Второй язык программирования
+name: Переменные
 theory: |
-  Изучать язык программирования, по традиции, начинают с программы 'Hello, World!', которая выводит этот текст на экран.
+  Что бы продолжить свой путь в Хаскеле давай научимся писать переменные!
 
   <pre class='hexlet-basics-output'>
-    Hello, World!
+    module Solution where
+
+    name :: String
+    age :: Int
+
+    name = "Your name"
+    age = 15
+
+    main :: IO ()
+    main = do
+      putStrLn ("My name: " ++ show name)
+      putStrLn ("My year older: " ++ shown age)
   </pre>
 
 instructions: |
 
-  Напишите хелоу ворлд!
+  Потренируйтесь и попробуйте выводить что то другое
